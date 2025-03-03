@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistenza Siti Web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" aria-label="Home">
+        <img id="header-img" src="logo.png" alt="Logo Assistenza Siti Web" />
+      </a>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#servizi">Servizi</a></li>
+          <li><a class="nav-link" href="#prezzi">Prezzi</a></li>
+          <li><a class="nav-link" href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="video-presentazione">
+      <iframe
+        id="video"
+        width="100%"
+        height="auto"
+        src="https://www.youtube.com/embed/JUYiF3rqq3c?si=iaYz2E4XH6bT_DiL?autoplay=1&mute=1&loop=1&controls=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </section>
+
+    <section id="servizi">
+      <h2>Confronta i Nostri Servizi</h2>
+      <div class="tabella-servizi">
+        <table>
+          <thead>
+            <tr>
+              <th>Servizio</th>
+              <th>Base</th>
+              <th>Pro</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monitoraggio sito web</td>
+              <td><i class="fa fa-check green-tick"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+            </tr>
+            <tr>
+              <td>Aggiornamenti di sicurezza</td>
+              <td><i class="fa fa-check green-tick"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+            </tr>
+            <tr>
+              <td>Backup sito web</td>
+              <td><i class="fa fa-times red-cross"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+            </tr>
+            <tr>
+              <td>Ottimizzazione performance</td>
+              <td><i class="fa fa-times red-cross"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+            </tr>
+            <tr>
+              <td>Supporto tecnico prioritario</td>
+              <td><i class="fa fa-times red-cross"></i></td>
+              <td><i class="fa fa-times red-cross"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+            </tr>
+            <tr>
+              <td>Supporto 24/7</td>
+              <td><i class="fa fa-times red-cross"></i></td>
+              <td><i class="fa fa-times red-cross"></i></td>
+              <td><i class="fa fa-check green-tick"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="prezzi">
+      <h2>Piani di Prezzo</h2>
+      <div class="prezzi-container">
+        <div class="piano">
+          <h3>Base</h3>
+          <p class="prezzo"><strong>€100</strong> al mese</p>
+          <ul>
+            <li>Servizi base</li>
+            <li>Ideale per piccoli siti</li>
+          </ul>
+          <button>Scegli il piano Base</button>
+        </div>
+        <div class="piano pro">
+          <h3>Pro</h3>
+          <p class="prezzo"><strong>€200</strong> al mese</p>
+          <ul>
+            <li>Servizi avanzati</li>
+            <li>Ottimizzazione inclusa</li>
+          </ul>
+          <button>Scegli il piano Pro</button>
+        </div>
+        <div class="piano premium">
+          <h3>Premium</h3>
+          <p class="prezzo"><strong>€300</strong> al mese</p>
+          <ul>
+            <li>Servizi completi</li>
+            <li>Supporto 24/7</li>
+          </ul>
+          <button>Scegli il piano Premium</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero">
+      <h1>Ricevi Maggiori Informazioni sull'Assistenza Siti Web</h1>
+      <p>Inserisci la tua email per ricevere il nostra materiale Informativo per scoprire tutti i dettagli dei nostri servizi.</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+        <input type="submit" id="submit" value="Invia" />
+      </form>
+    </section>
+
+    <footer>
+      <section id="contatti">
+        <div class="contatti-info">
+          <p>Email: <a href="mailto:info@assistenzaweb.it">info@assistenzaweb.it</a></p>
+          <p>Telefono: <a href="tel:+390123456789">+39 0123 456789</a></p>
+        </div>
+      </section>
+      <p>© 2025 Assistenza Web</p>
+    </footer>
+  </body>
+</html>
